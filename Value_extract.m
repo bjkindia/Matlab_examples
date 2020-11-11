@@ -1,5 +1,7 @@
-clear
-fid  = fopen('f3_V2_CHEMISTRY.TXT','r');
+clear %clearing work space
+% look for sample file in the resipotary 
+fid  = fopen('f3_V2_CHEMISTRY.TXT','r'); %input text file
+
 data = textscan(fid,'%s');
 fclose(fid);
 Str = string(data{:});
